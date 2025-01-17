@@ -1,70 +1,66 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import coling2020 from '../assets/images/coling2020_white.png'
+import law2019 from '../assets/images/law14.png'
+import coling2018 from '../assets/images/coling2018.png'
+import paclic2018 from '../assets/images/PACLIC2018.png'
+import lsa2017 from '../assets/images/lsa2017.png'
+import patent from '../assets/images/patent.png'
 import '../assets/styles/Project.scss';
+import { LinkPreview } from '@dhaiwat10/react-link-preview';
 
 function Project() {
     return(
     <div className="projects-container" id="projects">
-        <h1>Personal Projects</h1>
+        <h1>Publications and Patents</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+                <a href="https://patentimages.storage.googleapis.com/d6/39/4b/74396f8367322f/US12147499.pdf" target="_blank" rel="noreferrer"><img src={patent} className="zoom" alt="thumbnail" width="75%"/></a>
+                <a href="https://patentimages.storage.googleapis.com/d6/39/4b/74396f8367322f/US12147499.pdf" target="_blank" rel="noreferrer"><h2>Machine-learning tool for generating segmentation and topic metadata for documents</h2></a>
+                <p>Rajiv Jain, Varun Manjunatha, Joseph Barrow, Vlad Ion Morariu, Franck Dernoncourt, <strong>Sasha Spala</strong>, Nicholas Miller</p>
+                <p><em>US Patent 12147499 awarded Nov. 19 2024</em></p>
             </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
+                <a href="https://patentimages.storage.googleapis.com/c3/f1/98/e1c132f815f6ac/US12130850.pdf" target="_blank" rel="noreferrer"><img src={patent} className="zoom" alt="thumbnail" width="75%"/></a>
+                <a href="https://patentimages.storage.googleapis.com/c3/f1/98/e1c132f815f6ac/US12130850.pdf" target="_blank" rel="noreferrer"><h2>Model-based semantic text searching</h2></a>
+                <p>Trung Bui, Yu Gong, Tushar Dublish, <strong>Sasha Spala</strong>, Sachin Soni, Nicholas Miller, Joon Kim, Franck Dernoncourt, Carl Dockhorn, Ajinkya Kale</p>
+                <p><em>US Patent 12130850 awarded Oct. 29 2024</em></p>
             </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
-                <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
+                <a href="https://patentimages.storage.googleapis.com/b4/14/7f/dada35a69167af/US11232255.pdf" target="_blank" rel="noreferrer"><img src={patent} className="zoom" alt="thumbnail" width="75%"/></a>
+                <a href="https://patentimages.storage.googleapis.com/b4/14/7f/dada35a69167af/US11232255.pdf" target="_blank" rel="noreferrer"><h2>Generating digital annotations for evaluating and training automatic electronic document annotation models</h2></a>
+                <p>Franck Dernoncourt, Walter Chang, Trung Bui, Sean Fitzgerald, <strong>Sasha Spala</strong>, Kishore Aradhya, Carl Dockhorn</p>
+                <p><em>US Patent 11232255 awarded Jan. 25 2022</em></p>
             </div>
             <div className="project">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
-                <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
+                <a href="https://aclanthology.org/2020.semeval-1.41.pdf" target="_blank" rel="noreferrer"><img src={coling2020} className="zoom" alt="thumbnail" width="75%"/></a>
+                <a href="https://aclanthology.org/2020.semeval-1.41.pdf" target="_blank" rel="noreferrer"><h2>SemEval-2020 Task 6: Definition extraction from free text with the DEFT corpus</h2></a>
+                <p><strong>Sasha Spala</strong>, Nicholas A Miller, Franck Dernoncourt, Carl Dockhorn</p>
+                <p><em>In Proceedings of the Fourteenth Workshop on Semantic Evaluation, talk presented at COLING 2020 in Barcelona, Spain (remote)</em></p>
             </div>
             <div className="project">
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><h2>WeManage: Real Estate Asset Management</h2></a>
-                <p>This mobile application allows realtors in Japan to securely manage their property information and view future income predictions. This app is built with Ruby on Rails and JavaScript.</p>
+                <a href="https://aclanthology.org/W19-4015.pdf" target="_blank" rel="noreferrer"><img src={law2019} className="zoom" alt="thumbnail" width="75%"/></a>
+                <a href="https://aclanthology.org/W19-4015.pdf" target="_blank" rel="noreferrer"><h2>DEFT: A corpus for definition extraction in free-and semi-structured text</h2></a>
+                <p><strong>Sasha Spala</strong>, Nicholas A Miller, Yiming Yang, Franck Dernoncourt, Carl Dockhorn</p>
+                <p><em>In Proceedings of the 13th Linguistic Annotation Workshop, poster presented at ACL 2019 in Florence, Italy </em></p>
             </div>
             <div className="project">
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><img src={mock05} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><h2>COVID-19 Case Management</h2></a>
-                <p>Built official charts for COVID/vaccination tracking for an educational institution using JavaScript and the Google Sheets API v4. The dashboard served the university's leadership in their decision-making processes.</p>
+                <a href="https://aclanthology.org/C18-2017.pdf" target="_blank" rel="noreferrer"><img src={coling2018} className="zoom" alt="thumbnail" width="75%"/></a>
+                <a href="https://aclanthology.org/C18-2017.pdf" target="_blank" rel="noreferrer"><h2>A web-based framework for collecting and assessing highlighted sentences in a document</h2></a>
+                <p><strong>Sasha Spala</strong>, Franck Dernoncourt, Walter Chang, Carl Dockhorn</p>
+                <p><em>In Proceedings of the 27th International Conference on Computational Linguistics: System Demonstrations, demonstration presented at COLING 2018 in Santa Fe, New Mexico</em></p>
+
             </div>
             <div className="project">
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><img src={mock04} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><h2>Multiple Regression Property Analysis</h2></a>
-                <p>Analyzed the real estate market in Japan and predicted property prices by implementing statistical methods such as OLS and multi-regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
+                <a href="https://aclanthology.org/Y18-1071.pdf" target="_blank" rel="noreferrer"><img src={paclic2018} className="zoom" alt="thumbnail" width="75%"/></a>
+                <a href="https://aclanthology.org/Y18-1071.pdf" target="_blank" rel="noreferrer"><h2>A Comparison Study of Human Evaluated Automated Highlighting Systems</h2></a>
+                <p><strong>Sasha Spala</strong>, Franck Dernoncourt, Walter Chang, Carl Dockhorn</p>
+                <p><em>In Proceedings of the 32nd Pacific Asia Conference on Language, Information, and Computation, talk presented at PACLIC 2018 in Hong Kong</em></p>
             </div>
             <div className="project">
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><h2>Programs of Study</h2></a>
-                <p>Designed and developed a custom component for a CMS-based platform (e.g., 'Brightspot') using Java, Handlebars, and LESS. University students can find their majors of interest through this module.</p>
-            </div>
-            <div className="project">
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
-                <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
+                <a href="https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/4046/3808" target="_blank" rel="noreferrer"><img src={lsa2017} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://journals.linguisticsociety.org/proceedings/index.php/PLSA/article/view/4046/3808" target="_blank" rel="noreferrer"><h2>Speakers' rapidly-updated expectations influence prosodic realization of information structure</h2></a>
+                <p>Iris Chuoying Ouyang, <strong>Sasha Spala</strong>, Elsi Kaiser</p>
+                <p><em>In Proceedings of the Linguistic Society of America 2, talk presented at LSA 2017 in Boston, Massachusetts</em></p>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -27,26 +27,26 @@ function Contact() {
 
     /* Uncomment below if you want to enable the emailJS */
 
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
+    if (name !== '' && email !== '' && message !== '') {
+      var templateParams = {
+        name: name,
+        email: email,
+        message: message
+      };
 
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+      console.log(templateParams);
+      emailjs.send('service_zgy4zcs', 'template_ioomdt9', templateParams, 'lN0siPrqDCx1gPFQ1').then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
   };
 
   return (
@@ -54,7 +54,7 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          <p>Are you trying to reach me about my car's extended warranty?</p>
           <Box
             ref={form}
             component="form"
@@ -65,10 +65,11 @@ function Contact() {
             <div className='form-flex'>
               <TextField
                 required
-                id="outlined-required"
+                id="outlined-required-name"
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
+                InputProps={{ style: {color: 'black', background: 'white'} }}
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
@@ -77,10 +78,11 @@ function Contact() {
               />
               <TextField
                 required
-                id="outlined-required"
+                id="outlined-required-email"
                 label="Email / Phone"
                 placeholder="How can I reach you?"
                 value={email}
+                InputProps={{ style: {color: 'black', background: 'white'} }}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
@@ -97,6 +99,7 @@ function Contact() {
               rows={10}
               className="body-form"
               value={message}
+              InputProps={{ style: {color: 'black', background: 'white'} }}
               onChange={(e) => {
                 setMessage(e.target.value);
               }}

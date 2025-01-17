@@ -6,6 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem !important;
+  background-image: url("./assets/images/bg-dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 code {
@@ -15,7 +20,7 @@ code {
 
 .main-container {
   position: relative;
-  background-color: #0d1116;
+  background-color: rgba(13, 17, 22, .8);
 
 }
 
