@@ -6,7 +6,6 @@ import paclic2018 from '../assets/images/PACLIC2018.png'
 import lsa2017 from '../assets/images/lsa2017.png'
 import patent from '../assets/images/patent.png'
 import '../assets/styles/Project.scss';
-import { LinkPreview } from '@dhaiwat10/react-link-preview';
 
 function Project() {
     return(

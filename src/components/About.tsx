@@ -1,6 +1,5 @@
 import React from "react";
 import '../assets/styles/About.scss';
-import headshot from '../assets/images/sasha_headshot.png'
 
 function About() {
 
