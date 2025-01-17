@@ -1,8 +1,8 @@
 {
-  "name": "react-portfolio-template",
+  "name": "sasha-spala",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yujisatojr.github.io/react-portfolio-template",
+  "homepage": "http://www.cs.tufts.edu/~sspala01",
   "dependencies": {
     "@dhaiwat10/react-link-preview": "^1.15.0",
     "@emailjs/browser": "^4.4.1",
