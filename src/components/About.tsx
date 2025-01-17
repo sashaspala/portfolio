@@ -1,6 +1,5 @@
 import React from "react";
 import '../assets/styles/About.scss';
-
 function About() {
 
   return (
