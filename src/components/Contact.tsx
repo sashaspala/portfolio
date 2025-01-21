@@ -50,7 +50,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact">
+    <div className="contact" id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>

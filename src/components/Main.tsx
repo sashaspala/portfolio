@@ -7,7 +7,7 @@ import headshot from '../assets/images/sasha_headshot.png'
 function Main() {
 
   return (
-    <div className="container">
+    <div className="main-container">
       <div className="about-section">
         <div className="image-wrapper">
           <img src={headshot} alt="Avatar" />

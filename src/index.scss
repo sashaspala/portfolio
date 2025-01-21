@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem !important;
-  background-image: url("./assets/images/bg-dark.png");
+  background-image: url("./assets/images/quilt.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -20,8 +20,7 @@ code {
 
 .main-container {
   position: relative;
-  background-color: rgba(13, 17, 22, .8);
-
+  background-color: transparent
 }
 
 a {
@@ -68,6 +67,8 @@ p, a, h1, h2, h3, h4, h5, label, button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(13, 17, 22, .8);
+
 }
 
 .header-image {

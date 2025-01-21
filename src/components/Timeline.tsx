@@ -10,7 +10,7 @@ import '../assets/styles/Timeline.scss'
 
 function Timeline() {
   return (
-    <div id="history">
+    <div className="history" id="history">
       <div className="items-container">
         <h1>Career and Education Highlights</h1>
         <VerticalTimeline>
