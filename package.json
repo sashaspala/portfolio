@@ -2,7 +2,7 @@
   "name": "sasha-spala",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sspala01.cs.tufts.gitlab.io/sasha-spala",
+  "homepage": "https://sashaspala.github.io/portfolio",
   "dependencies": {
     "@dhaiwat10/react-link-preview": "^1.15.0",
     "@emailjs/browser": "^4.4.1",
